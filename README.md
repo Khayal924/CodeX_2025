@@ -64,12 +64,11 @@
 
       <h3>Dərslər</h3>
       <p>Videoları sonradan buraya əlavə edəcəksiniz. Hər video üçün aşağıdakı kodu istifadə edin:</p>
-      <pre class="small" style="background:#f1f1f1;padding:10px;border-radius:8px;overflow:auto">
-&lt;div class="video"&gt;
-  &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-      </pre>
-
+      <pre class="small" style="background:#f1f1f1;padding:10px;border-radius:8px;overflow:auto"
+<h3>Test Video — 16 Oktyabr 2025</h3>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" allowfullscreen></iframe>
+</div>
       <!-- Nümunə video -->
       <!--
       <div class="video">
