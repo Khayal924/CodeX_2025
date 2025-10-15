@@ -115,3 +115,8 @@
   </script>
 </body>
 </html>
+<!-- Yeni video bloku -->
+<h3>Əyləncə</h3>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" allowfullscreen></iframe>
+</div>
