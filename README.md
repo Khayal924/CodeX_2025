@@ -63,56 +63,5 @@
       <hr style="margin:18px 0">
 
       <h3>Dərslər</h3>
-      <p>Videoları sonradan buraya əlavə edəcəksiniz. Hər video üçün aşağıdakı kodu istifadə edin:</p>
-      <pre class="small" style="background:#f1f1f1;padding:10px;border-radius:8px;overflow:auto"
-<h3>Test Video — 16 Oktyabr 2025</h3>
-<div class="video">
-  <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" allowfullscreen></iframe>
-</div>
-      <!-- Nümunə video -->
-      <!--
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-      </div>
-      -->
-
-      <footer>
-        <p class="small">© 2025 — Proqramlaşdırma Kursu | Əlaqə: WhatsApp ilə yaz</p>
-      </footer>
-    </main>
-  </div>
-
-  <script>
-    const FULL_CARD = "5411249812061013";
-    const showBtn = document.getElementById("show-card");
-    const copyBtn = document.getElementById("copy-card");
-    const cardMasked = document.getElementById("card-masked");
-    let shown = false;
-
-    showBtn.addEventListener("click", () => {
-      if(!shown){
-        cardMasked.textContent = FULL_CARD;
-        showBtn.textContent = "Kartı gizlət";
-        shown = true;
-      } else {
-        cardMasked.textContent = FULL_CARD.slice(0,4) + " **** **** " + FULL_CARD.slice(-4);
-        showBtn.textContent = "Kartı göstər";
-        shown = false;
-      }
-    });
-
-    copyBtn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(FULL_CARD);
-        copyBtn.textContent = "Kopyalandı ✓";
-        setTimeout(()=> copyBtn.textContent = "Kartı kopyala", 1800);
-      } catch(e) {
-        alert("Kopyalama alınmadı. Kart nömrəsi: " + FULL_CARD);
-      }
-    });
-
-    cardMasked.textContent = FULL_CARD.slice(0,4) + " **** **** " + FULL_CARD.slice(-4);
-  </script>
-</body>
-</html>
+      
 
