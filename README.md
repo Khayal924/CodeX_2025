@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="az">
 <head>
   <meta charset="UTF-8">
@@ -89,7 +88,7 @@
     <p id="errorMsg" style="color:red; display:none;">❌ Yanlış şifrə. Yenidən cəhd edin.</p>
   </div>
 
-  <!-- Video bölməsi (BOŞDUR) -->
+  <!-- Video bölməsi (BOŞ) -->
   <div class="video-box" id="videoBox" style="display:none;">
     <h2>📚 Proqramlaşdırma dərsləri</h2>
     <!-- 📌 Buraya sonradan iframe kodları əlavə edə bilərsən -->
