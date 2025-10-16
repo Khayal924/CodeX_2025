@@ -98,16 +98,14 @@
   <!-- Video bölməsi -->
   <div class="video-box" id="videoBox" style="display:none;">
     <h2>📚 Proqramlaşdırma dərsləri</h2>
-    <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" frameborder="0" allowfullscreen></iframe>
-    <!-- Yeni videoları əlavə etmək üçün aşağıdakı kimi iframe-lər əlavə edə bilərsən -->
-    <!--
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    <!-- Buraya gələcəkdə iframe kodu ilə videolar əlavə edə bilərsən -->
+    <!-- Məsələn:
+    <iframe src="https://www.youtube.com/embed/YENI_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
     -->
   </div>
 
   <script>
-    // ✅ İstifadəçilərə veriləcək şifrələr (istəsən artırıb azalda bilərsən)
+    // ✅ İstifadəçilərə veriləcək şifrələr
     const validPasswords = ["XCODE2025", "KURS001", "KURS002"];
 
     function checkPassword() {
