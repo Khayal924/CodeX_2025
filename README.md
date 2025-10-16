@@ -3,90 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onlayn Kurs — Proqramlaşdırma Öyrən</title>
+  <title>Proqramlaşdırma Öyrən | XCodeLearn</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f2f2f2;
       padding: 20px;
-      text-align: center;
+      max-width: 800px;
+      margin: auto;
     }
     h1 {
-      color: #333;
+      text-align: center;
+      color: #2b2b2b;
     }
-    .video {
-      max-width: 560px;
-      margin: 20px auto;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: none; /* Şifrə yoxdursa gizli */
+    .pay-box, .video-box, .password-box {
+      background: #fff;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #1eb254;
+    }
+    input[type="password"] {
+      padding: 8px;
+      width: 70%;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 8px 12px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      margin-left: 5px;
     }
     iframe {
       width: 100%;
-      height: 315px;
-      border: none;
-    }
-    input {
-      padding: 10px;
-      font-size: 16px;
-      width: 200px;
-      margin-top: 20px;
-    }
-    button {
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-left: 5px;
-    }
-    p {
-      color: red;
-      font-weight: bold;
+      height: 250px;
+      margin-top: 15px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-<h1>📚 Proqramlaşdırma Öyrən — Onlayn Kurs</h1>
-<p>Videoya baxmaq üçün ödəniş etdikdən sonra şifrəni daxil edin:</p>
+  <h1>💻 Proqramlaşdırma Kursları</h1>
+  <p style="text-align:center;">Onlayn öyrən, gələcəyini qur!</p>
 
-<input type="password" id="passInput" placeholder="Şifrəni daxil edin">
-<button onclick="checkPassword()">Təsdiqlə</button>
-<p id="errorMsg"></p>
+  <!-- Ödəniş bölməsi -->
+  <div class="pay-box">
+    <h2>💳 Ödəniş məlumatları</h2>
+    <p><strong>Kart nömrəsi:</strong> 5411 **** **** 1013</p>
+    <p><strong>Ad:</strong> Khayal Garibov</p>
+    <p><strong>Bank:</strong> Leobank</p>
+    <p><strong>Məbləğ:</strong> 10 AZN (birdəfəlik kurs haqqı)</p>
 
-<!-- Videoların blokları -->
-<div class="video" id="video1">
-  <h3>Proqramlaşdırma Öyrən — Dərs 1</h3>
-  <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" allowfullscreen></iframe>
-</div>
+    <!-- WhatsApp ilə bildiriş -->
+    <a class="btn" href="https://wa.me/994514852886?text=Salam,%20mən%20kurs%20üçün%2010%20AZN%20ödədim.%20Adım:%20[Adınızı%20yazın]%20TXN:%20[Əməliyyat%20ID]" target="_blank">
+      📲 WhatsApp ilə ödənişi bildir
+    </a>
 
-<script>
-  // Burada şifrələri təyin edirsən
-  const passwords = {
-    video1: "1234" // Ödəniş edənlər üçün şifrə
-  };
+    <!-- Google Form linki -->
+    <p style="margin-top:10px;">
+      <a class="btn" style="background:#ff9900;" href="https://forms.gle/SENIN-FORM-LINKIN" target="_blank">
+        📎 Ödənişi təsdiqlə (Form)
+      </a>
+    </p>
 
-  function checkPassword() {
-    const input = document.getElementById("passInput").value;
-    let anyCorrect = false;
+    <small>Ödəniş etdikdən sonra WhatsApp və ya Form vasitəsilə təsdiq göndərin. Təsdiqdən sonra sizə şifrə göndəriləcək.</small>
+  </div>
 
-    for (let videoId in passwords) {
-      if(input === passwords[videoId]) {
-        document.getElementById(videoId).style.display = "block";
-        anyCorrect = true;
+  <!-- Şifrə ilə giriş bölməsi -->
+  <div class="password-box">
+    <h2>🔐 Videolara giriş</h2>
+    <p>Ödəniş təsdiqləndikdən sonra sizə göndərilən şifrəni daxil edin:</p>
+    <input type="password" id="passwordInput" placeholder="Şifrəni daxil edin">
+    <button onclick="checkPassword()">Giriş</button>
+    <p id="errorMsg" style="color:red; display:none;">❌ Yanlış şifrə. Yenidən cəhd edin.</p>
+  </div>
+
+  <!-- Video bölməsi -->
+  <div class="video-box" id="videoBox" style="display:none;">
+    <h2>📚 Proqramlaşdırma dərsləri</h2>
+    <iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" frameborder="0" allowfullscreen></iframe>
+    <!-- Yeni videoları əlavə etmək üçün aşağıdakı kimi iframe-lər əlavə edə bilərsən -->
+    <!--
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    -->
+  </div>
+
+  <script>
+    // ✅ İstifadəçilərə veriləcək şifrələr (istəsən artırıb azalda bilərsən)
+    const validPasswords = ["XCODE2025", "KURS001", "KURS002"];
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value.trim();
+      if (validPasswords.includes(input)) {
+        document.getElementById("videoBox").style.display = "block";
+        document.getElementById("errorMsg").style.display = "none";
       } else {
-        document.getElementById(videoId).style.display = "none";
+        document.getElementById("errorMsg").style.display = "block";
       }
     }
-
-    const errorMsg = document.getElementById("errorMsg");
-    if(anyCorrect) {
-      errorMsg.textContent = "";
-    } else {
-      errorMsg.textContent = "Yanlış şifrə! Ödəniş etməmisinizsə, link almaq üçün bizimlə əlaqə saxlayın.";
-    }
-  }
-</script>
+  </script>
 
 </body>
 </html>
