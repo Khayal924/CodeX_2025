@@ -50,12 +50,6 @@
       border-radius: 8px;
       margin-left: 5px;
     }
-    iframe {
-      width: 100%;
-      height: 250px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
   </style>
 </head>
 <body>
@@ -95,17 +89,13 @@
     <p id="errorMsg" style="color:red; display:none;">❌ Yanlış şifrə. Yenidən cəhd edin.</p>
   </div>
 
-  <!-- Video bölməsi -->
+  <!-- Video bölməsi (BOŞDUR) -->
   <div class="video-box" id="videoBox" style="display:none;">
     <h2>📚 Proqramlaşdırma dərsləri</h2>
-    <!-- Buraya gələcəkdə iframe kodu ilə videolar əlavə edə bilərsən -->
-    <!-- Məsələn:
-    <iframe src="https://www.youtube.com/embed/YENI_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    -->
+    <!-- 📌 Buraya sonradan iframe kodları əlavə edə bilərsən -->
   </div>
 
   <script>
-    // ✅ İstifadəçilərə veriləcək şifrələr
     const validPasswords = ["XCODE2025", "KURS001", "KURS002"];
 
     function checkPassword() {
