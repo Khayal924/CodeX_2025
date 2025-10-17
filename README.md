@@ -1,7 +1,7 @@
 <html lang="az">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code X | Proqramlaşdırma və Kibertəhlükəsizlik</title>
   <style>
     :root{
@@ -13,7 +13,7 @@
       --muted:#666;
     }
     body{
-      font-family: Inter, Arial, sans-serif;
+      font-family: Arial, sans-serif;
       background: linear-gradient(120deg,var(--bg),#eef2f6);
       margin:0;
       padding:20px;
@@ -59,8 +59,7 @@
       box-shadow:0 6px 18px rgba(37,211,102,0.12);
     }
     .btn.info{ background: #ff9900; color:#fff; }
-    .btn.small{ padding:8px 10px; font-weight:600; }
-    input[type="password"], input[type="text"]{
+    input[type="password"]{
       padding:10px;
       border-radius:8px;
       border:1px solid #d0d7de;
@@ -83,7 +82,7 @@
     .muted{ color:var(--muted); font-size:13px; margin-top:8px; }
     @media(min-width:760px){
       .video-grid{ grid-template-columns:1fr 1fr; }
-      input[type="password"], input[type="text"]{ width:64%; }
+      input[type="password"]{ width:64%; }
     }
   </style>
 </head>
