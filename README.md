@@ -91,11 +91,11 @@
 <body>
 
   <h1>Code X</h1>
-  <p class="lead">İngilis dili (lisenziyalı kurs) və Azərbaycan dilində C++ kursları — ödəniş WhatsApp ilə.</p>
+  <p class="lead">İngilis və Azərbaycan dilində kibertəhlükəsizlik və proqramlaşdırma kursları — ödəniş WhatsApp ilə.</p>
 
   <!-- ENGLISH COURSE -->
   <div class="course" id="courseEn">
-    <h2>🇬🇧 English — Full C++ Course (Licensed)</h2>
+    <h2>🇬🇧 English — Kibertəhlükəsizlik və Proqramlaşdırma Kursu (Licensed)</h2>
     <span class="price">Price: <strong>10 AZN</strong></span>
     <p class="meta"><strong>Pay (card):</strong> 5411 **** **** 1013 — Khayal Garibov (Leobank)</p>
     <div class="row">
@@ -118,7 +118,7 @@
 
   <!-- AZERBAIJANI COURSE -->
   <div class="course" id="courseAz">
-    <h2>🇦🇿 Azərbaycan Dili — C++ Kursu</h2>
+    <h2>🇦🇿 Azərbaycan Dili — Kibertəhlükəsizlik və Proqramlaşdırma Kursu</h2>
     <span class="price">Qiymət: <strong>20 AZN</strong></span>
     <p class="meta"><strong>Pay (card):</strong> 5411 **** **** 1013 — Khayal Garibov (Leobank)</p>
     <div class="row">
