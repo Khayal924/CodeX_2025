@@ -17,9 +17,9 @@
       background: linear-gradient(120deg,var(--bg),#eef2f6);
       margin:0;
       padding:20px;
-      display:block;
       max-width:980px;
-      margin-left:auto;margin-right:auto;
+      margin-left:auto;
+      margin-right:auto;
       color:var(--text);
     }
     h1{
@@ -76,7 +76,6 @@
       cursor:pointer;
       font-weight:700;
     }
-    .note{ background:#fff3cd; color:#664d03; padding:10px 12px; border-radius:8px; margin-top:12px; font-size:14px; }
     .video-box{ display:none; margin-top:14px; border-radius:10px; overflow:hidden; border:2px solid rgba(0,230,230,0.12); padding:12px; background:#fafafa; }
     .video-grid{ display:grid; grid-template-columns:1fr; gap:10px; }
     .video-card{ background:#000; border-radius:8px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.25); }
