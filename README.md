@@ -2,17 +2,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XCodeLearn | Proqramlaşdırma və Kibertəhlükəsizlik</title>
+  <title>Code X | Proqramlaşdırma və Kibertəhlükəsizlik</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9; /* Açıq fon */
+      background: #f9f9f9;
       padding: 20px;
       max-width: 900px;
       margin: auto;
     }
 
-    /* Başlıq dizaynı */
     h1 {
       text-align: center;
       font-size: 36px;
@@ -20,7 +19,7 @@
       background: linear-gradient(90deg, #ff0000, #0000ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 5px rgba(0,0,0,0.2);
+      text-shadow: 0 0 8px rgba(0,0,0,0.3);
       margin-bottom: 10px;
     }
 
@@ -32,6 +31,7 @@
     }
 
     .course {
+      position: relative;
       background: #fff;
       padding: 20px;
       margin-top: 20px;
@@ -39,6 +39,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       border-left: 5px solid #ff0000;
       transition: transform 0.2s, box-shadow 0.2s;
+      overflow: hidden;
     }
 
     .course:hover {
@@ -46,17 +47,26 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    h2 {
-      color: #222;
-      margin-bottom: 8px;
+    /* Futuristic blinking X logo */
+    .course::after {
+      content: "X";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 40px;
+      color: rgba(255,0,0,0.8);
+      font-weight: bold;
+      animation: blinkX 1.5s infinite;
+      pointer-events: none;
     }
 
-    .price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #444;
-      margin-bottom: 10px;
+    @keyframes blinkX {
+      0%, 100% { color: rgba(255,0,0,0.8); text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000; }
+      50% { color: rgba(255,255,255,0.8); text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
     }
+
+    h2 { color: #222; margin-bottom: 8px; }
+    .price { font-size: 18px; font-weight: bold; color: #444; margin-bottom: 10px; }
 
     .btn {
       display: inline-block;
@@ -117,7 +127,7 @@
 </head>
 <body>
 
-<h1>XCodeLearn</h1>
+<h1>Code X</h1>
 <p class="subtitle">Proqramlaşdırma və Kibertəhlükəsizlik üzrə 3 dildə kurslar</p>
 
 <!-- Azərbaycan dili kursu -->
