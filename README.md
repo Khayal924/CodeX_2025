@@ -5,8 +5,8 @@
   <title>Code X | Proqramlaşdırma və Kibertəhlükəsizlik</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #f9f9f9, #e6e6e6);
       padding: 20px;
       max-width: 900px;
       margin: auto;
@@ -32,41 +32,24 @@
 
     .course {
       position: relative;
-      background: #fff;
+      background: #111;
+      color: #fff;
       padding: 20px;
       margin-top: 20px;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
       border-left: 5px solid #ff0000;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.3s, box-shadow 0.3s;
       overflow: hidden;
     }
 
     .course:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(255,0,0,0.5);
     }
 
-    /* Futuristic blinking X logo */
-    .course::after {
-      content: "X";
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 40px;
-      color: rgba(255,0,0,0.8);
-      font-weight: bold;
-      animation: blinkX 1.5s infinite;
-      pointer-events: none;
-    }
-
-    @keyframes blinkX {
-      0%, 100% { color: rgba(255,0,0,0.8); text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000; }
-      50% { color: rgba(255,255,255,0.8); text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
-    }
-
-    h2 { color: #222; margin-bottom: 8px; }
-    .price { font-size: 18px; font-weight: bold; color: #444; margin-bottom: 10px; }
+    h2 { color: #ff5555; margin-bottom: 10px; }
+    .price { font-size: 18px; font-weight: bold; color: #00ffff; margin-bottom: 10px; }
 
     .btn {
       display: inline-block;
@@ -77,12 +60,12 @@
       border-radius: 8px;
       margin-top: 10px;
       font-weight: bold;
-      transition: background 0.2s, box-shadow 0.2s;
+      transition: background 0.3s, box-shadow 0.3s;
     }
 
     .btn:hover { 
       background: #1eb254;
-      box-shadow: 0 0 8px #25D36680;
+      box-shadow: 0 0 12px #25D36680;
     }
 
     input[type="password"] {
@@ -112,6 +95,7 @@
       margin-top: 15px;
       border-radius: 10px;
       overflow: hidden;
+      border: 2px solid #00ffff;
     }
 
     iframe {
@@ -119,10 +103,12 @@
       height: 315px;
       border: 0;
       display: block;
+      border-radius: 10px;
     }
 
     p, strong { font-size: 15px; }
     #errorAz, #errorEn, #errorTr { color: #ff4d4d; display: none; font-weight: bold; }
+
   </style>
 </head>
 <body>
@@ -215,5 +201,6 @@
     }
   }
 </script>
+
 </body>
 </html>
