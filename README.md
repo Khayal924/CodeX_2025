@@ -97,8 +97,7 @@
     <span class="price">Price: <strong>10 AZN</strong></span>
     <p class="meta"><strong>Pay (card):</strong> 5411 **** **** 1013 — Khayal Garibov (Leobank)</p>
     <div class="row">
-      <a class="btn" href="https://wa.me/994514852886?text=Salam,%20kurs%20haqq%C4%B1nda%20m%C9%99lumat%20ist%C9%99yir%C9%99m%20(English%20Course%20-%2010%20AZN)" target="_blank">📲 WhatsApp ilə məlumat alın</a>
-      <a class="btn info" href="https://wa.me/994514852886?text=Salam,%20m%C9%99n%20Code%20X%20haqq%C4%B1nda%20%C9%99lav%C9%99%20m%C9%99lumat%20ist%C9%99yir%C9%99m." target="_blank">ℹ️ Kontakt</a>
+      <a class="btn" href="https://wa.me/994514852886?text=Salam,%20kurs%20haqqında%20məlumat%20istəyirəm%20(English%20Course%20-%2010%20AZN)" target="_blank">📲 WhatsApp ilə məlumat alın</a>
     </div>
     <div style="margin-top:12px;">
       <input type="password" id="passEn" placeholder="Şifrəni daxil edin"/>
@@ -106,8 +105,9 @@
       <p id="errorEn" class="muted" style="color:#d23;display:none;margin-top:8px;">❌ Yanlış şifrə</p>
     </div>
     <div id="videoEn" class="video-box">
-      <h3>📚 English Course — Content</h3>
+      <h3>📚 English Course — Videolar</h3>
       <div class="video-grid">
+        <!-- Buraya videoları əlavə edə bilərsən -->
         <div class="video-card"><iframe src="https://www.youtube.com/embed/VIDEO_ID_EN_1" allowfullscreen></iframe></div>
         <div class="video-card"><iframe src="https://www.youtube.com/embed/VIDEO_ID_EN_2" allowfullscreen></iframe></div>
       </div>
@@ -120,8 +120,7 @@
     <span class="price">Qiymət: <strong>20 AZN</strong></span>
     <p class="meta"><strong>Pay (card):</strong> 5411 **** **** 1013 — Khayal Garibov (Leobank)</p>
     <div class="row">
-      <a class="btn" href="https://wa.me/994514852886?text=Salam,%20kurs%20haqq%C4%B1nda%20m%C9%99lumat%20ist%C9%99yir%C9%99m%20(Azərbaycan%20kursu%20-%2020%20AZN)" target="_blank">📲 WhatsApp ilə məlumat alın</a>
-      <a class="btn info" href="https://wa.me/994514852886?text=Salam,%20m%C9%99n%20Code%20X%20haqq%C4%B1nda%20%C9%99lav%C9%99%20m%C9%99lumat%20ist%C9%99yir%C9%99m." target="_blank">ℹ️ Kontakt</a>
+      <a class="btn" href="https://wa.me/994514852886?text=Salam,%20kurs%20haqqında%20məlumat%20istəyirəm%20(Azərbaycan%20kursu%20-%2020%20AZN)" target="_blank">📲 WhatsApp ilə məlumat alın</a>
     </div>
     <div style="margin-top:12px;">
       <input type="password" id="passAz" placeholder="Şifrəni daxil edin"/>
@@ -131,6 +130,7 @@
     <div id="videoAz" class="video-box">
       <h3>📚 Azərbaycan Kursu — Videolar</h3>
       <div class="video-grid">
+        <!-- Buraya videoları əlavə edə bilərsən -->
         <div class="video-card"><iframe src="https://www.youtube.com/embed/dzkCrgtfiiY" allowfullscreen></iframe></div>
       </div>
     </div>
