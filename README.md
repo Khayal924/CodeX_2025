@@ -80,7 +80,10 @@
       <!-- Bir Qeyd bölməsi -->
       <div style="background:#fffbcc; padding:10px; border-radius:8px; margin-bottom:10px;">
         <strong>Bir Qeyd:</strong>
-        <p>İstifadəçi şifrəni yazdıqdan sonra ilk fayldan başqa bütün faylları izləyə bilərsiniz. İlk fayl reklam məqsədlidir və tamamilə başqa videoları əks etdirir. Digər faylları sırasıyla izləyə bilərsiniz. Hər şey Proqramlaşdırma, Kibertəhlükəsizlik və s. mövzuları üzrədir.</p>
+        <p>
+          Qeyd olunan file → part 1 → 1-ci fayl (geethams) yazılı file. (İzləməyin)<br>
+          İstifadəçi şifrəni yazdıqdan sonra ilk fayldan başqa bütün faylları izləyə bilərsiniz. Digər faylları sırasıyla izləyə bilərsiniz. Hər şey Proqramlaşdırma, Kibertəhlükəsizlik və s. mövzuları üzrədir.
+        </p>
       </div>
 
       <a href="https://mega.nz/folder/t69gha4L#IE4bFM_UtjvsANNF0FojLQ/folder/dm0VFL5A" target="_blank" class="download-link">📦 Kursu aç</a>
